@@ -1,8 +1,5 @@
 # CodeLens
 
-> **Smarter Code Reviews for Modern Developers.**
-> 🏆 **1st Place Winner** - KG Reddy College of Engineering and Technology Hackathon (Feb 2026)
-
 
 ## 💡 The Vision
 **"Why not just paste code into ChatGPT?"**
