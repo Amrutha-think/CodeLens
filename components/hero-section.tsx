@@ -23,7 +23,7 @@ const transitionVariants = {
             filter: 'blur(0px)',
             y: 0,
             transition: {
-                type: 'spring',
+                type: 'spring' as const,
                 bounce: 0.3,
                 duration: 1.5,
             },
@@ -99,7 +99,7 @@ export default function HeroSection() {
                                                     opacity: 1,
                                                     y: 0,
                                                     transition: {
-                                                        type: 'spring',
+                                                        type: 'spring' as const,
                                                         bounce: 0.3,
                                                         duration: 2,
                                                     },
@@ -213,7 +213,7 @@ export default function HeroSection() {
                         <motion.div
                             initial={{ opacity: 0, scale: 0.5 }}
                             animate={{ opacity: [0, 0.6, 0], scale: [0.5, 2, 3] }}
-                            transition={{ duration: 1.2, ease: 'easeOut' }}
+                            transition={{ duration: 1.2, ease: 'easeOut' as const }}
                             className="absolute inset-0 flex items-center justify-center pointer-events-none"
                         >
                             <div className="w-[400px] h-[400px] rounded-full bg-primary/30 blur-[100px]" />
@@ -223,7 +223,7 @@ export default function HeroSection() {
                         <motion.div
                             initial={{ scale: 0, opacity: 0 }}
                             animate={{ scale: [0, 1, 1.2, 0.9, 1], opacity: [0, 1, 1, 1, 1] }}
-                            transition={{ duration: 0.6, ease: 'easeOut' }}
+                            transition={{ duration: 0.6, ease: 'easeOut' as const }}
                             className="absolute z-20 pointer-events-none"
                         >
                             <div className="w-16 h-16 rounded-full bg-gradient-to-br from-yellow-300 via-amber-400 to-orange-500 shadow-[0_0_60px_20px_rgba(251,191,36,0.4),0_0_120px_40px_rgba(251,146,60,0.2)]" />
